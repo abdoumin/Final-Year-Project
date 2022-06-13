@@ -108,7 +108,7 @@ public class PrescriptionActivity extends AppCompatActivity implements View.OnCl
         recyclerView.setAdapter(prescriptionAdapter);
 
         Retrofit.Builder builder = new Retrofit.Builder()
-                .baseUrl(BASE_URL)
+                .baseUrl(URLClass.DeviceAddress)
                 .addConverterFactory(GsonConverterFactory.create());
 
         Retrofit retrofit = builder.build();
@@ -212,7 +212,7 @@ public class PrescriptionActivity extends AppCompatActivity implements View.OnCl
             Prescription prescription = new Prescription();
 
             Retrofit.Builder builder = new Retrofit.Builder()
-                    .baseUrl(BASE_URL)
+                    .baseUrl(URLClass.DeviceAddress)
                     .addConverterFactory(GsonConverterFactory.create());
 
             Retrofit retrofit = builder.build();

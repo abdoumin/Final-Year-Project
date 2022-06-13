@@ -209,7 +209,7 @@ public class PrescriptionList extends AppCompatActivity implements View.OnClickL
                 Medication medicine = new Medication(Datee, medicineName, frequency, dosage, meal, days, endDate);
 
                 Retrofit.Builder builder = new Retrofit.Builder()
-                        .baseUrl(BASE_URL)
+                        .baseUrl(URLClass.DeviceAddress)
                         .addConverterFactory(GsonConverterFactory.create());
 
                 Retrofit retrofit = builder.build();
@@ -277,7 +277,7 @@ public class PrescriptionList extends AppCompatActivity implements View.OnClickL
             if (!TAG.isEmpty() && !description.isEmpty()) {
                 Modele modele = new Modele(TAG, description);
                 Retrofit.Builder builder = new Retrofit.Builder()
-                        .baseUrl(BASE_URL)
+                        .baseUrl(URLClass.DeviceAddress)
                         .addConverterFactory(GsonConverterFactory.create());
 
                 Retrofit retrofit = builder.build();
@@ -335,7 +335,7 @@ public class PrescriptionList extends AppCompatActivity implements View.OnClickL
 
     private void createTempsDePrise(String medId,String heuredeprise) {
         Retrofit.Builder builder = new Retrofit.Builder()
-                .baseUrl(BASE_URL)
+                .baseUrl(URLClass.DeviceAddress)
                 .addConverterFactory(GsonConverterFactory.create());
 
         Retrofit retrofit = builder.build();

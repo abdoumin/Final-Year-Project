@@ -185,7 +185,7 @@ public class MedicineActivity extends AppCompatActivity implements View.OnClickL
         FileNumber.addValueEventListener(this);*/
 
         Retrofit.Builder builder = new Retrofit.Builder()
-                .baseUrl(BASE_URL)
+                .baseUrl(URLClass.DeviceAddress)
                 .addConverterFactory(GsonConverterFactory.create());
 
         Retrofit retrofit = builder.build();

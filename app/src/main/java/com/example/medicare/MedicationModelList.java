@@ -81,7 +81,7 @@ public class MedicationModelList extends AppCompatActivity implements View.OnCli
         recyclerView.setAdapter(medicineAdapter);
 
         Retrofit.Builder builder = new Retrofit.Builder()
-                .baseUrl(BASE_URL)
+                .baseUrl(URLClass.DeviceAddress)
                 .addConverterFactory(GsonConverterFactory.create());
 
         Retrofit retrofit = builder.build();
@@ -135,7 +135,7 @@ public class MedicationModelList extends AppCompatActivity implements View.OnCli
 
     public Integer createPrescription(Prescription prescription) throws IOException {
         Retrofit.Builder builder = new Retrofit.Builder()
-                .baseUrl(BASE_URL)
+                .baseUrl(URLClass.DeviceAddress)
                 .addConverterFactory(GsonConverterFactory.create());
 
         Retrofit retrofit = builder.build();
@@ -154,7 +154,7 @@ public class MedicationModelList extends AppCompatActivity implements View.OnCli
     public void addMedicationsToPrescription(int presID)
     {
         Retrofit.Builder builder = new Retrofit.Builder()
-                .baseUrl(BASE_URL)
+                .baseUrl(URLClass.DeviceAddress)
                 .addConverterFactory(GsonConverterFactory.create());
 
 

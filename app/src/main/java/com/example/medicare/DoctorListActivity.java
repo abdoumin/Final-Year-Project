@@ -63,7 +63,7 @@ public class DoctorListActivity extends AppCompatActivity {
         recycleView.setAdapter(doctorAdapter);
 
         Retrofit.Builder builder = new Retrofit.Builder()
-                .baseUrl(BASE_URL)
+                .baseUrl(URLClass.DeviceAddress)
                 .addConverterFactory(GsonConverterFactory.create());
 
         Retrofit retrofit = builder.build();

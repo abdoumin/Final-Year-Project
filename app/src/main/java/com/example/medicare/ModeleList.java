@@ -73,7 +73,7 @@ public class ModeleList extends AppCompatActivity {
         recyclerView.setAdapter(modeleAdapter);
 
         Retrofit.Builder builder = new Retrofit.Builder()
-                .baseUrl(BASE_URL)
+                .baseUrl(URLClass.DeviceAddress)
                 .addConverterFactory(GsonConverterFactory.create());
 
         Retrofit retrofit = builder.build();

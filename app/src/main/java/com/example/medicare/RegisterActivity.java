@@ -143,7 +143,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
                             Doctor newDoctor = new Doctor(firstName,lastName,age,gender,
                                     Username,password,email);
                             Retrofit.Builder builder = new Retrofit.Builder()
-                                    .baseUrl(BASE_URL)
+                                    .baseUrl(URLClass.DeviceAddress)
                                     .addConverterFactory(GsonConverterFactory.create());
 
                             Retrofit retrofit = builder.build();

@@ -192,7 +192,7 @@ public class AddNewPatientActivity extends AppCompatActivity implements View.OnC
                 );
 
         Retrofit.Builder builder = new Retrofit.Builder()
-                .baseUrl(BASE_URL)
+                .baseUrl(URLClass.DeviceAddress)
                 .addConverterFactory(GsonConverterFactory.create());
 
         Retrofit retrofit = builder.build();
