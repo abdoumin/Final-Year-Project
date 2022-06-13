@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.medicare" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/medicarelogo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/medicarelogo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true" >
+        <activity
+            android:name=".PrescriptionList"
+            android:noHistory="true" />
+        <activity android:name=".DoctorListActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".MedicineActivity" />
+        <activity android:name=".DoctorActivity" />
+        <activity android:name=".PatientDetailsActivity" />
+        <activity android:name=".ListOfPatientsSec" />
+        <activity android:name=".EditPatientSecretary" />
+        <activity android:name=".AddNewPatientActivity" />
+        <activity android:name=".AdminActivity" />
+        <activity android:name=".MedicationList" />
+        <activity android:name=".ModeleList" />
+        <activity android:name=".MedicationModelList" />
+        <activity android:name=".ListOfDates" />
+        <activity android:name=".ListOfPatientsSecJournal" />
+        <activity android:name=".JournalList" />
+        <activity android:name=".MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".PrescriptionActivity" />
+    </application>
+
+</manifest>

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/silver"
+    android:layout_height="match_parent"
+    tools:context=".PatientDetailsActivity">
+
+
+
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+
+                <LinearLayout
+                    android:id="@+id/toplinear"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/back3"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_margin="10dp"
+                        app:srcCompat="@drawable/patientdetails" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Patient Info"
+                        style="@style/toptext" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="230dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardViewSearch"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="20dp"
+                        android:paddingBottom="20dp"
+                        app:cardElevation="10dp"
+                        app:cardCornerRadius="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+
+
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        style="@style/headingText"
+                        android:id="@+id/textViewHeading"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Patient Personal Details" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@color/black"/>
+
+
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        style="@style/cardviewtext"
+                        android:id="@+id/textViewFileNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="File Number : ----" />
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        style="@style/cardviewtext"
+                        android:id="@+id/textViewFullName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Full Name : ----" />
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        style="@style/cardviewtext"
+                        android:id="@+id/textViewDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Full Name : ----" />
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@color/black"/>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        style="@style/cardviewtext"
+        android:id="@+id/textViewAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Full Name : ----" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        style="@style/cardviewtext"
+        android:id="@+id/textViewGender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Full Name : ----" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        style="@style/cardviewtext"
+        android:id="@+id/textViewBloodGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Full Name : ----" />
+
+
+
+    <TextView
+        android:layout_marginTop="10dp"
+        style="@style/cardviewtext"
+        android:id="@+id/textViewAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Full Name : ----" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        style="@style/cardviewtext"
+        android:id="@+id/textViewFullcity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Full Name : ----" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        style="@style/cardviewtext"
+        android:id="@+id/textViewPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Full Name : ----" />
+
+
+    <TextView
+        android:layout_marginTop="10dp"
+        style="@style/cardviewtext"
+        android:id="@+id/textViewEmergencyName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Full Name : ----" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        style="@style/cardviewtext"
+        android:id="@+id/textViewEmergencyNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Full Name : ----" />
+
+
+    <TextView
+        android:layout_marginTop="10dp"
+        style="@style/cardviewtext"
+        android:id="@+id/textViewReason"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Full Name : ----" />
+
+                    <Button
+                        android:id="@+id/btn_addpresc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Ajouter Ordonance" />
+
+
+                </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:padding="20dp"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_marginTop="10dp"
+        style="@style/headingText"
+        android:id="@+id/textViewHeading"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Medcine Details" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/black"/>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        style="@style/cardviewtext"
+        android:id="@+id/textViewMedicineNameDia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Medicine Name : ----" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        style="@style/cardviewtext"
+        android:id="@+id/prescription_refilldata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Date : ----" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        style="@style/cardviewtext"
+        android:id="@+id/textViewDosageDia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dosage : ----" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        style="@style/cardviewtext"
+        android:id="@+id/textViewMealDia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Meal : ----" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        style="@style/cardviewtext"
+        android:id="@+id/textViewEndDateDia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="EndDate : ----" />
+
+    <Button
+        android:id="@+id/btnAddDia"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="50dp"
+        android:text="Add Medicine"
+        style="@style/buttonStyle"
+        android:background="@drawable/btn_press" />
+
+
+
+</LinearLayout>
