@@ -36,6 +36,7 @@ TextView TextViewNotRegistered,textheading,TextViewForget;
     FirebaseAuth fAuth;
     SharedPreferences sharedPreferences;
     SharedPreferences.Editor myEdit;
+    Singleton sing;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -111,6 +112,8 @@ TextView TextViewNotRegistered,textheading,TextViewForget;
                                                 Intent i =new Intent(LoginActivity.this,DoctorActivity.class);
                                                 i.putExtra("FullName",fullName);
                                                 myEdit.putString("username",username);
+                                                sing = Singleton.getInstance();
+                                                sing.setUsernameDoctor(username);
                                                 startActivity(i);
                                                 finish();
                                             }else {

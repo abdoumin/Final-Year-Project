@@ -37,7 +37,7 @@ public class DoctorActivity extends AppCompatActivity implements NavigationView.
         setContentView(R.layout.activity_doctor);
         sharedPreferences = getApplicationContext().getSharedPreferences("PatientUsername",Context.MODE_PRIVATE);
         myEdit = sharedPreferences.edit();
-        username = sharedPreferences.getString("username","");
+        username = Singleton.getInstance().getUsernameDoctor();
 
         textviewName=findViewById(R.id.textviewName);
         Bundle mBundle=getIntent().getExtras();
